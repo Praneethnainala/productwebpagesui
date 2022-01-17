@@ -1,10 +1,18 @@
-function validatedata() {
-  let x = document.forms["myForm"]["username"].value;
-  if (x == "") {
-	  alert("username must be filled out");
-    return false;
-  }
-}
-function sub(){
-	alert(product Details);
-}
+$(document).ready(function() {
+	$("#topform").validate();
+	({
+		rules : {
+			productId : "required",
+			productname:"required",
+				brandname:"required",
+				category:"required",
+				modelyear:"required",
+				listprice:"required",
+				orderid:"required",
+		},
+		messages : {
+			productid : "enter",
+			productname:"enter name"
+		},
+	});
+});

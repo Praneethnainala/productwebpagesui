@@ -5,10 +5,15 @@
 <title>product info</title>
 <link rel="stylesheet" href="product.css"></link>
 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script type="text/javascript" src="productjs.js"></script>
+
 </head>
 <center><body  background="C:\Users\npraneeth\Downloads\dark-wall-empty-room-with-plants-floor-3d-rendering.jpg"   > 
 <br>
-<form name="myform" onsumbit="validatedata()">
+
 <div class ="bar">
 <div></div><nav>
 <a href="productmenu.html"><b>HOME</b></a>
@@ -17,13 +22,13 @@
 </nav>
 </div>
 <h1>PRODUCT DETAILS</h1>
-
+<form name="topform" >
 <label >PRODUCT ID</label>
-<input  type="number" name="ProductId"  /> <br> <br>  
+<input  type="number" name="productId"  /> <br> <br>  
 <label>PRODUCT NAME</label>
-<Input  type ="text" name ="product name" /> <br> <br>
+<Input  type ="text" name ="productname" /> <br> <br>
 <label>BRAND NAME</label>
-<input   type ="text" name = "brand name" /> <br> <br>
+<input   type ="text" name = "brandname" /> <br> <br>
 <label>category :</label>
 <input type ="radio" name ="category" /> mobile<br>
 <input type ="radio" name ="category" /> shoes<br>
@@ -31,20 +36,15 @@
 <input type ="radio" name ="category" /> food <br>
 
 <label>MODEL YEAR</label>
-<input type="date" name="mobel year"/><br><br>
+<input type="date" name="modelyear"/><br><br>
 
 <label>LIST PRICE</label>
-<input type="number" placeholder="oooo.oo" name ="list price"/><br><br>
+<input type="number" placeholder="oooo.oo" name ="listprice"/><br><br>
 
 <label>ORDER ID</label>
-<input type="number" name= "order id"/><br><br>
-
-
+<input type="number" name= "orderid"/><br><br>
 
 <button type ="submit" >submit</button><br><br>
-
-
-
 
 
 </form>
@@ -53,6 +53,5 @@
 </form>
 
  
-
 </body></center>
 </html>
