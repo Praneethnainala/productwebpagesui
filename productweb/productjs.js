@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#topform").validate();
+	$("#topform").validate
 	({
 		rules : {
 			productId : "required",
